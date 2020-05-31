@@ -148,10 +148,10 @@ class Portfolio extends React.Component {
                       <td>{unrealized_gain_loss}</td>
                       <td>
                         <button
-                          className="btn btn-light btn-sm"
+                          className="btn btn-danger btn-sm"
                           onClick={() => this.removeStock(index)}
                         >
-                          remove
+                          Remove
                         </button>
                       </td>
                     </tr>
@@ -194,7 +194,7 @@ class Portfolio extends React.Component {
               value={form.market_price}
               onChange={this.handleFormChange}
             />
-            <button className="btn btn-primary btn-sm">add</button>
+            <button className="btn btn-primary btn-sm">Add</button>
           </form>
           <div className="col-12 col-md-6">
             <h4 className="mb-3">
